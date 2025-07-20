@@ -18,7 +18,8 @@
 .text {
      color: #3A3A3A;
 }
-.btn-primary{
+
+.btn-primary {
      width: 200px;
      height: 45px;
      font-size: 1rem;
@@ -29,6 +30,7 @@
      background-color: #E02C6D;
 
 }
+
 nav {
      justify-content: space-around;
      align-items: center;
@@ -49,6 +51,10 @@ nav {
 .maune-section ul li a {
      text-decoration: none;
      font-size: 16px;
+}
+
+.icons .icon {
+     margin-right: 20px;
 }
 
 .banner-section {
@@ -86,4 +92,40 @@ nav {
      background-repeat: no-repeat;
      background-position: right;
 
+}
+
+
+@media screen and (max-width:576px) {
+
+     .display-flex,
+     .banner-section {
+          flex-direction: column;
+     }
+
+     .banner-section {
+          flex-direction: column-reverse;
+     }
+
+     .banner-contant {
+          width: auto;
+          height: auto;
+     }
+     .banner-title, p{
+          text-align: center;
+     }
+     .header-button{
+          display: flex;
+          justify-content: center;    
+     }
+     
+
+     .maune-section ul li {
+          list-style: none;
+          margin-bottom: 10px;
+
+     }
+
+     .img-continer {
+          margin-top: 20px;
+     }
 }
